@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Pages - Data Science & AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> Data Science, Data Engineering & Machine Learning</h1>
+    <p>Explore the fields powering today’s AI revolution.</p>
+    <button id="toggleMode">Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling -->
+    <section>
+      <h2>About Data Science</h2>
+      <p id="dsText">
+        Data Science is about extracting knowledge and insights from data. It
+        combines statistics, programming, and domain expertise to drive smarter
+        decision-making.
+      </p>
+      <button id="toggleDS">Toggle Data Science Info</button>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section>
+      <h2>Applications of Machine Learning</h2>
+      <div class="accordion">
+        <button class="accordion-btn">Healthcare</button>
+        <div class="accordion-content">
+          ML is used for predictive diagnosis, drug discovery, and patient care.
+        </div>
+
+        <button class="accordion-btn">Finance</button>
+        <div class="accordion-content">
+          Fraud detection, risk assessment, and algorithmic trading rely heavily
+          on ML models.
+        </div>
+
+        <button class="accordion-btn">Transportation</button>
+        <div class="accordion-content">
+          Self-driving cars and smart logistics depend on AI & ML.
+        </div>
+      </div>
+    </section>
+
+    <!-- Image carousel -->
+    <section>
+      <h2>Data Engineering in Action</h2>
+      <p>
+        Data Engineering builds pipelines that move, clean, and transform data
+        for analytics and AI systems.
+      </p>
+      <div id="carousel">
+        <img
+          id="carouselImage"
+          src="images/data1.jpg"
+          alt="Data Engineering Pipeline"
+        />
+        <br />
+        <button id="prevBtn">⬅ Previous</button>
+        <button id="nextBtn">Next ➡</button>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>Join Our AI Community</h2>
+      <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+        <span id="nameError" class="error"></span>
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email" />
+        <span id="emailError" class="error"></span>
+        <br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password" />
+        <span id="passwordError" class="error"></span>
+        <br />
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Evans Macharia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
